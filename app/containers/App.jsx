@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Navigation from 'containers/Navigation';
+import Footer from 'containers/Footer';
 
 import classNames from 'classnames/bind';
 import styles from 'css/main';
@@ -21,6 +22,7 @@ export default class App extends Component {
       <div className={cx('app')}>
         <Navigation />
         {this.props.children}
+        <Footer />
       </div>
     );
   }
