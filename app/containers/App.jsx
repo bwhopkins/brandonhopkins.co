@@ -2,11 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import Navigation from 'containers/Navigation';
 import Footer from 'containers/Footer';
 
-import classNames from 'classnames/bind';
-import styles from 'css/main';
-
-const cx = classNames.bind(styles);
-
 /*
  * React-router's <Router> component renders <Route>'s
  * and replaces `this.props.children` with the proper React Component.
@@ -19,7 +14,7 @@ const cx = classNames.bind(styles);
 export default class App extends Component {
   render() {
     return (
-      <div className={cx('app')}>
+      <div className="container">
         <Navigation />
         {this.props.children}
         <Footer />

@@ -27,30 +27,12 @@ var commonLoaders = [
         limit: 10000,
     }
   },
-  { test: /\.html$/, loader: 'html-loader' }
+  { test: /\.html$/, loader: 'html-loader' },
+  {
+    test: /\.scss$/,
+    loaders: ["style", "css", "sass"]
+  }
 ];
-
-var postCSSConfig = function() {
-  return [
-    require('postcss-import')({
-      path: path.join(__dirname, '..', 'app', 'css'),
-      // addDependencyTo is used for hot-reloading in webpack
-      addDependencyTo: webpack
-    }),
-    require('postcss-simple-vars')(),
-    // Unwrap nested rules like how Sass does it
-    require('postcss-nested')(),
-    //  parse CSS and add vendor prefixes to CSS rules
-    require('autoprefixer')({
-      browsers: ['last 2 versions', 'IE > 8']
-    }),
-    // A PostCSS plugin to console.log() the messages registered by other
-    // PostCSS plugins
-    require('postcss-reporter')({
-      clearMessages: true
-    })
-  ];
-};
 
 module.exports = {
     // eval - Each module is executed with eval and //@ sourceURL.
@@ -110,6 +92,5 @@ module.exports = {
           __DEVCLIENT__: true,
           __DEVSERVER__: false
         })
-    ],
-    postcss: postCSSConfig
+    ]
 };

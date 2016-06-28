@@ -1,8 +1,4 @@
 import React from 'react';
-import classNames from 'classnames/bind';
-import styles from 'css/components/home';
-
-const cx = classNames.bind(styles);
 
 /*
  * Note: This is kept as a container-level component, 
@@ -13,7 +9,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div className={cx('home')}>
+      <div>
         <section>
           <div>
             <h1>Quality Branding & Illustration That Speaks Volumes</h1>
