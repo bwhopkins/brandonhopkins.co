@@ -16,8 +16,8 @@ export default class Home extends React.Component {
       <div className={cx('home')}>
         <section>
           <div>
-            <h1>Quality Branding & Illustration That Speak Volumes</h1>
-            <p>New Site Launcing Soon</p>
+            <h1>Quality Branding & Illustration That Speaks Volumes</h1>
+            <p>New Site Launching Soon</p>
           </div>
         </section>
         <section>
@@ -25,9 +25,17 @@ export default class Home extends React.Component {
             <div>
               <h3>Hi I'm Brandon Hopkins</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda
-                at commodi deleniti eius eligendi, et fuga incidunt ipsa itaque iure minus
-                perspiciatis quas, quia quidem ratione repellat veniam voluptatibus!
+                Visual communication empowers a story in a way words just are not capable of doing.
+                Allowing your voice to bridge language, age, and comprehensive gaps to more deeply
+                impact the world.
+                <br />
+                Challenges I have solved include; branding companies in the
+                fields of tech, construction, financial planning, and boutique companies,
+                illustrating for clothing lines, artwork for skate decks, infographic and
+                communications pieces.
+                <br />
+                The reach of visual design does not stop at the aforementioned list.
+                New creative challenges are always welcomed.
               </p>
               <img src="http://placehold.it/460x250" alt="" />
             </div>
