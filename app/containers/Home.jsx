@@ -1,22 +1,22 @@
 import React from 'react';
 
 /*
- * Note: This is kept as a container-level component, 
- *  i.e. We should keep this as the container that does the data-fetching 
+ * Note: This is kept as a container-level component,
+ *  i.e. We should keep this as the container that does the data-fetching
  *  and dispatching of actions if you decide to have any sub-components.
  */
 
 const bgStyle = {
-  backgroundImage: `url(${require('../images/hero@2x.png')})`
+  backgroundImage: `url(${require('../images/hero@2x.jpg')})`
 };
 
-const aboutImg = require('../images/aboutImg@2x.png');
+const aboutImg = require('../images/aboutImg@2x.jpg');
 
 const workImgs = [
-  require('../images/image-1@2x.png'),
-  require('../images/image-2@2x.png'),
-  require('../images/image-3@2x.png'),
-  require('../images/image-4@2x.png')
+  require('../images/image-1@2x.jpg'),
+  require('../images/image-2@2x.jpg'),
+  require('../images/image-3@2x.jpg'),
+  require('../images/image-4@2x.jpg')
 ];
 
 export default class Home extends React.Component {
