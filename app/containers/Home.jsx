@@ -14,6 +14,13 @@ const bgStyle = {
 
 const aboutImg = require('../images/aboutImg@2x.png');
 
+const workImgs = [
+  require('../images/image-1@2x.png'),
+  require('../images/image-2@2x.png'),
+  require('../images/image-3@2x.png'),
+  require('../images/image-4@2x.png')
+];
+
 export default class Home extends React.Component {
 
   render() {
@@ -57,13 +64,13 @@ export default class Home extends React.Component {
             </article>
           </div>
         </section>
-        <section>
-          <h2>Currently Working On</h2>
+        <h2 className="super-header">Currently Working On</h2>
+        <section className="work-section">
           <article>
-            <img src="http://placehold.it/350" alt="" />
-            <img src="http://placehold.it/350" alt="" />
-            <img src="http://placehold.it/350" alt="" />
-            <img src="http://placehold.it/350" alt="" />
+            <img className="three columns" src={ workImgs[0] } />
+            <img className="three columns" src={ workImgs[1] } />
+            <img className="three columns" src={ workImgs[2] } />
+            <img className="three columns" src={ workImgs[3] } />
           </article>
         </section>
         <section>

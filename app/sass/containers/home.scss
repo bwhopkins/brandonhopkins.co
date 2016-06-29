@@ -68,3 +68,15 @@
 .about-img {
   max-width: 100%;
 }
+
+.work-section {
+
+  .three.columns {
+    width: 50%;
+    margin: 0;
+    @media (min-width: 550px) {
+      width: 25%;
+    }
+  }
+
+}
