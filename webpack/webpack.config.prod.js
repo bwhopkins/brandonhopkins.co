@@ -38,6 +38,10 @@ var commonLoaders = [
   },
   { test: /\.css$/,
     loader: ExtractTextPlugin.extract('style-loader', 'css-loader?module!postcss-loader')
+  },
+  {
+    test: /\.scss$/,
+    loaders: ["style", "css", "sass"]
   }
 ];
 

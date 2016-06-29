@@ -6,8 +6,6 @@ import React from 'react';
  *  and dispatching of actions if you decide to have any sub-components.
  */
 
-require('../sass/containers/home.scss');
-
 const bgStyle = {
   backgroundImage: `url(${require('../images/hero@2x.png')})`
 };

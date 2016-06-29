@@ -1,7 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 
-require('../sass/containers/navigation.scss');
-
 class Navigation extends Component {
 
   render() {

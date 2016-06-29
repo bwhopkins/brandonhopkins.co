@@ -1,7 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 
-require('../sass/containers/footer.scss');
-
 const behanceImg = require('../images/behance@2x.png');
 const dribbleImg = require('../images/dribbble@2x.png');
 const twitterImg = require('../images/twitter@2x.png');
