@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,700);
+
+$poppins: 'Poppins', Helvetica, Arial, sans-serif;
+
+$weight-light: 300;
+$weight-regular: 400;
+$weight-bold: 700;
+
+html {
+  font-family: $poppins;
+}
+
+.container {
+  max-width: 140rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: $weight-bold;
+  font-size: 2.2rem;
+  color: #2e2e2e;
+  & .light {
+    font-weight: $weight-light;
+    color: #9d9d9d;
+  }
+}
