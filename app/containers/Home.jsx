@@ -8,10 +8,11 @@ import React from 'react';
 
 require('../sass/containers/home.scss');
 
-
 const bgStyle = {
   backgroundImage: `url(${require('../images/hero@2x.png')})`
 };
+
+const aboutImg = require('../images/aboutImg@2x.png');
 
 export default class Home extends React.Component {
 
@@ -27,25 +28,33 @@ export default class Home extends React.Component {
             </div>
           </div>
         </section>
-        <section>
-          <div>
-            <div>
-              <h3>Hi I'm Brandon Hopkins</h3>
-              <p>
-                Visual communication empowers a story in a way words just are not capable of doing.
-                Allowing your voice to bridge language, age, and comprehensive gaps to more deeply
-                impact the world.
-                <br />
-                Challenges I have solved include; branding companies in the
-                fields of tech, construction, financial planning, and boutique companies,
-                illustrating for clothing lines, artwork for skate decks, infographic and
-                communications pieces.
-                <br />
-                The reach of visual design does not stop at the aforementioned list.
-                New creative challenges are always welcomed.
-              </p>
-              <img src="http://placehold.it/460x250" alt="" />
-            </div>
+        <section className="about-section">
+          <div className="container">
+            <article className="about-article ten columns">
+              <div className="row">
+                <div className="one-half column">
+                  <h3 className="blue-header">Hi I'm Brandon Hopkins</h3>
+                  <p>
+                    Visual communication empowers a story in a way words just are not capable of
+                    doing. Allowing your voice to bridge language, age, and comprehensive gaps to
+                    more deeply impact the world.
+                  </p>
+                  <p>
+                    Challenges I have solved include; branding companies in the
+                    fields of tech, construction, financial planning, and boutique companies,
+                    illustrating for clothing lines, artwork for skate decks, infographic and
+                    communications pieces.
+                  </p>
+                  <p>
+                    The reach of visual design does not stop at the aforementioned list.
+                    New creative challenges are always welcomed.
+                  </p>
+                </div>
+                <div className="one-half column">
+                  <img className="about-img" src={ aboutImg } />
+                </div>
+              </div>
+            </article>
           </div>
         </section>
         <section>

@@ -17,6 +17,7 @@ body {
   &.full {
     width: 100%;
     max-width: none;
+    padding: 0;
   }
 }
 
@@ -32,4 +33,9 @@ body {
     font-weight: $weight-light;
     color: #9d9d9d;
   }
+}
+
+.blue-header {
+  color: #17a2f5;
+  font-weight: 700;
 }
