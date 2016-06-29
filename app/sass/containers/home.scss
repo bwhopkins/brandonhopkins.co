@@ -1,3 +1,5 @@
+$blue: #17a2f5;
+
 .hero-section {
   background: no-repeat center;
   background-size: cover;
@@ -79,4 +81,44 @@
     }
   }
 
+}
+
+.contact-section {
+  background-color: $blue;
+  text-align: center;
+  color: #fff;
+
+  .one-half.column {
+    float: none;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 12rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+
+  button {
+    background-color: #2e2e2e;
+    border: 5px solid #82c3ea;
+    color: #fff;
+    border-radius: 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 1.5rem 7rem;
+    height: initial;
+    margin-bottom: 4rem;
+    &:hover, &:active, &:focus {
+      border: 5px solid #82c3ea;
+      color: #fff;
+    }
+  }
 }

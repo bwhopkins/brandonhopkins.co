@@ -65,7 +65,7 @@ export default class Home extends React.Component {
           </div>
         </section>
         <h2 className="super-header">Currently Working On</h2>
-        <section className="work-section">
+        <section className="work-section u-cf">
           <article>
             <img className="three columns" src={ workImgs[0] } />
             <img className="three columns" src={ workImgs[1] } />
@@ -73,13 +73,19 @@ export default class Home extends React.Component {
             <img className="three columns" src={ workImgs[3] } />
           </article>
         </section>
-        <section>
-          <h2>Let's Work Together</h2>
-          <p>
-            I am always looking to work on new exciting projects. Feel free to send me an email
-            with some details about your project. I can’t wait to see what you’re working on.
-          </p>
-          <button>Contact Me</button>
+        <section className="contact-section">
+          <div className="container">
+            <div className="one-half column">
+              <h2>Let's Work Together</h2>
+              <p>
+                I am always looking to work on new exciting projects. Feel free to send me an email
+                with some details about your project. I can’t wait to see what you’re working on.
+              </p>
+              <form action="mailto:hello@brandonhopkins.co">
+                <button type="submit">Contact Me</button>
+              </form>
+            </div>
+          </div>
         </section>
       </div>
     );
