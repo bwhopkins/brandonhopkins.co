@@ -5,15 +5,26 @@ import React from 'react';
  *  i.e. We should keep this as the container that does the data-fetching 
  *  and dispatching of actions if you decide to have any sub-components.
  */
+
+require('../sass/containers/home.scss');
+
+
+const bgStyle = {
+  backgroundImage: `url(${require('../images/hero@2x.png')})`
+};
+
 export default class Home extends React.Component {
 
   render() {
     return (
       <div>
-        <section>
-          <div>
-            <h1>Quality Branding & Illustration That Speaks Volumes</h1>
-            <p>New Site Launching Soon</p>
+        <section className="hero-section" style={ bgStyle }>
+          <div className="container">
+            <div className="hero-overlay seven columns">
+              <h1>Quality Branding & Illustration That Speaks Volumes</h1>
+              <hr />
+              <p>New Site Launching Soon</p>
+            </div>
           </div>
         </section>
         <section>

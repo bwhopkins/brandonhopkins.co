@@ -1,0 +1,39 @@
+.hero-section {
+  background: no-repeat center;
+  background-size: cover;
+
+  .container {
+    padding: 15rem 0;
+
+    .hero-overlay {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  float: none;
+  padding: 3rem 5rem;
+
+  hr {
+    border-top: solid 4px #fff;
+    width: 50%;
+  }
+
+  h1,
+  p {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-weight: 700;
+    margin: 0;
+  }
+
+}

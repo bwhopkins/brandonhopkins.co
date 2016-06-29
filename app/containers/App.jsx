@@ -14,7 +14,7 @@ import Footer from 'containers/Footer';
 export default class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="container full">
         <Navigation />
         {this.props.children}
         <Footer />

@@ -1,3 +1,5 @@
+@import './lib/normalize';
+@import './lib/skeleton';
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,700);
 
 $poppins: 'Poppins', Helvetica, Arial, sans-serif;
@@ -6,12 +8,16 @@ $weight-light: 300;
 $weight-regular: 400;
 $weight-bold: 700;
 
-html {
+body {
   font-family: $poppins;
 }
 
 .container {
   max-width: 140rem;
+  &.full {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .uppercase {

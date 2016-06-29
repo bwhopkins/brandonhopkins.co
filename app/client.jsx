@@ -14,8 +14,6 @@ const store = configureStore(initialState, browserHistory);
 const history = syncHistoryWithStore(browserHistory, store);
 const routes = createRoutes(store);
 
-require('./sass/lib/normalize.scss');
-require('./sass/lib/skeleton.scss');
 require('./sass/main.scss');
 
 // Router converts <Route> element hierarchy to a route config:
