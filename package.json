@@ -13,7 +13,8 @@
     "build": "npm run clean && npm run build:prod",
     "test": "cross-env NODE_ENV=test karma start",
     "test:watch": "cross-env NODE_ENV=test npm test -- --watch --no-single-run",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "stayAlive": "cross-env NODE_ENV=production forever start server/index.js"
   },
   "devDependencies": {
     "expect": "^1.15.2",
