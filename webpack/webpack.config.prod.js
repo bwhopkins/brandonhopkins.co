@@ -38,7 +38,7 @@ var commonLoaders = [
   },
   {
     test: /\.scss$/,
-    loaders: ["style", "css", "sass"]
+    loader: ExtractTextPlugin.extract('style', 'css!sass')
   }
 ];
 
