@@ -146,7 +146,6 @@ module.exports = [
           __DEVSERVER__: false
         }),
         new InlineEnviromentVariablesPlugin({ NODE_ENV: 'production' })
-    ],
-    postcss: postCSSConfig
+    ]
   }
 ];
