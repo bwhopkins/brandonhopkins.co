@@ -20,7 +20,7 @@ class Footer extends Component {
               <a href="https://www.behance.net/brandonhopkins" target="_blank">
                 <img src={ behanceImg } alt="Behance" />
               </a>
-              <a href="https://dribbble.com/therealmccoydesign" target="_blank">
+              <a href="https://dribbble.com/bhstudio" target="_blank">
                 <img src={ dribbleImg } alt="Dribble" />
               </a>
               <a href="https://twitter.com/_b_ill" target="_blank">
